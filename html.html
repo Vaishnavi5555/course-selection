@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Selection System</title>
+    <link rel="stylesheet" href="styles.css">
+    <style> 
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+header {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.course-selection, .teacher-profiles, .feedback-form {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+.courses {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.course label, .profile p {
+    display: block;
+    margin-bottom: 8px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.profile {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Semester Course Selection</h1>
+    </header>
+
+    <section class="course-selection">
+        <h2>Select Theory Courses (4)</h2>
+        <div class="courses">
+            <div class="course">
+                <label for="theory1">Theory Course 1 :</label>
+                <select id="theory1">
+                    <option value="">Select Course</option>
+                    <option value="course1">Operating System</option>
+                    <option value="course2">Computer Networks</option>
+                    <option value="course3">Compiler Desgin</option>
+                    <option value="course4">Cloud Foundation</option>
+                    <option value="course5">Python</option>
+                    <option value="course6">Java Programming</option>
+                </select>
+                <label for="teacher1">Select Teacher:</label>
+                <select id="teacher1">
+                    <option value="">Select Teacher</option>
+                    <option value="teacher1">Dr. Smith</option>
+                    <option value="teacher2">Prof. Johnson</option>
+                    <option value="teacher3">Dr. Williams</option>
+                    <option value="teacher4">Olivia</option>
+                    <option value="teacher5">Emma</option>
+                    <option value="teacher6">Amelia</option>
+                </select>
+                <label for="theory1">Theory Course 2 :</label>
+                <select id="theory1">
+                    <option value="">Select Course</option>
+                    <option value="course1">Operating System</option>
+                    <option value="course2">Computer Networks</option>
+                    <option value="course3">Compiler Desgin</option>
+                    <option value="course4">Cloud Foundation</option>
+                    <option value="course5">Python</option>
+                    <option value="course6">Java Programming</option>
+                </select>
+                <label for="teacher1">Select Teacher:</label>
+                <select id="teacher1">
+                    <option value="">Select Teacher</option>
+                    <option value="teacher1">Dr. Smith</option>
+                    <option value="teacher2">Prof. Johnson</option>
+                    <option value="teacher3">Dr. Williams</option>
+                    <option value="teacher4">Olivia</option>
+                    <option value="teacher5">Emma</option>
+                    <option value="teacher6">Amelia</option>
+                </select>
+                <label for="theory1">Theory Course 3 :</label>
+                <select id="theory1">
+                    <option value="">Select Course</option>
+                    <option value="course1">Operating System</option>
+                    <option value="course2">Computer Networks</option>
+                    <option value="course3">Compiler Desgin</option>
+                    <option value="course4">Cloud Foundation</option>
+                    <option value="course5">Python</option>
+                    <option value="course6">Java Programming</option>
+                </select>
+                <label for="teacher1">Select Teacher:</label>
+                <select id="teacher1">
+                    <option value="">Select Teacher</option>
+                    <option value="teacher1">Dr. Smith</option>
+                    <option value="teacher2">Prof. Johnson</option>
+                    <option value="teacher3">Dr. Williams</option>
+                    <option value="teacher4">Olivia</option>
+                    <option value="teacher5">Emma</option>
+                    <option value="teacher6">Amelia</option>
+                </select></br>
+                <label for="theory1">Theory Course 4 :</label>
+                <select id="theory1">
+                    <option value="">Select Course</option>
+                    <option value="course1">Operating System</option>
+                    <option value="course2">Computer Networks</option>
+                    <option value="course3">Compiler Desgin</option>
+                    <option value="course4">Cloud Foundation</option>
+                    <option value="course5">Python</option>
+                    <option value="course6">Java Programming</option>
+                </select>
+                <label for="teacher1">Select Teacher:</label>
+                <select id="teacher1">
+                    <option value="">Select Teacher</option>
+                    <option value="teacher1">Dr. Smith</option>
+                    <option value="teacher2">Prof. Johnson</option>
+                    <option value="teacher3">Dr. Williams</option>
+                    <option value="teacher4">Olivia</option>
+                    <option value="teacher5">Emma</option>
+                    <option value="teacher6">Amelia</option>
+                </select></br>
+               
+            </div>
+
+            <!-- Repeat similar blocks for Theory Course 2, 3, 4 -->
+        </div>
+
+        <h2>Select Lab Courses (2)</h2>
+        <div class="courses">
+            <div class="course">
+                <label for="lab1">Lab Course 1:</label>
+                <select id="lab1">
+                    <option value="">Select Course</option>
+                    <option value="lab1">Computer Networks Lab</option>
+                    <option value="lab2">Operating System Lab</option>
+                    <option value="lab3">FSAD Lab</option>
+                    <option value="lab3">Java Lab</option>
+                </select>
+                <label for="labTeacher1">Select Teacher:</label>
+                <select id="labTeacher1">
+                    <option value="">Select Teacher</option>
+                    <option value="teacher1">Dr. Brown</option>
+                    <option value="teacher2">Prof. Davis</option>
+                    <option value="teacher3">Sofia</option>
+                    <option value="teacher4">Luna</option>
+                </select></br>
+                <label for="lab1">Lab Course 2:</label>
+                <select id="lab1">
+                    <option value="">Select Course</option>
+                    <option value="lab1">Computer Networks Lab</option>
+                    <option value="lab2">Operating System Lab</option>
+                    <option value="lab3">FSAD Lab</option>
+                    <option value="lab3">Java Lab</option>
+                </select>
+                <label for="labTeacher1">Select Teacher:</label>
+                <select id="labTeacher1">
+                    <option value="">Select Teacher</option>
+                    <option value="teacher1">Dr. Brown</option>
+                    <option value="teacher2">Prof. Davis</option>
+                    <option value="teacher3">Sofia</option>
+                    <option value="teacher4">Luna</option>
+                </select>
+            </div>
+
+            <!-- Repeat similar block for Lab Course 2 -->
+        </div>
+    </section>
+
+    <section class="teacher-profiles">
+        <h2>Teacher Profiles</h2>
+        <div class="profile">
+            <h3>Dr. Smith</h3>
+            <p>Rating: 4.5/5</p>
+            <p>Research Projects: AI-based Teaching</p>
+            <p>Patents: 3 Patents in AI</p>
+            <p>Academic Background: PhD in Computer Science</p>
+        </div>
+        <div class="profile">
+            <h3>Prof.Johnson</h3>
+            <p>Rating: 3.5/5</p>
+            <p>Research Projects: Expense tracker</p>
+            <p>Patents: NO patents</p>
+            <p>Academic Background: PhD in Computer Science</p>
+        </div>
+        <div class="profile">
+            <h3>Dr. Williams</h3>
+            <p>Rating: 4.3/5</p>
+            <p>Research Projects: Online voting system</p>
+            <p>Patents: 3 Patents in ML</p>
+            <p>Academic Background: PhD in Computer Science</p>
+        </div>
+        <div class="profile">
+            <h3>Olivia</h3>
+            <p>Rating: 3/5</p>
+            <p>Research Projects: HealthCare management system</p>
+            <p>Patents: No patents</p>
+            <p>Academic Background: M.Tech</p>
+        </div>
+            <div class="profile">
+            <h3>Emma</h3>
+            <p>Rating: 4/5</p>
+            <p>Research Projects: Banking bot</p>
+            <p>Patents: 3 Patents </p>
+            <p>Academic Background: M.Tech</p>
+        </div>
+        <div class="profile">
+            <h3>Amelia</h3>
+            <p>Rating: 4/5</p>
+            <p>Research Projects: Movie recommendation system</p>
+            <p>Patents: No Patents</p>
+            <p>Academic Background: PhD in Computer Science</p>
+        </div>
+       
+
+        <!-- More teacher profiles with similar structure -->
+    </section>
+
+    <section class="feedback-form">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input[type="text"], input[type="email"], textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+
+    <div class="container">
+        <h2>Teacher Feedback Form</h2>
+
+        <form action="submit_feedback.php" method="POST">
+            <!-- Teacher's Name -->
+            <label for="teacher">Select Teacher:</label>
+            <select id="teacher" name="teacher" required>
+                <option value="">--Select Teacher--</option>
+                <option value="teacher1">Dr.Smith</option>
+                <option value="teacher2">Prof.Johnson</option>
+                <option value="teacher3">Dr.Williams<option>
+                <option value="teacher4">Olivia</option>
+                <option value="teacher5">Emma</option>
+                <option value="teacher6">Amelia<option>
+            </select>
+            <!-- Feedback Text -->
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="4" placeholder="Write your feedback here" required></textarea>
+
+            <!-- Rating -->
+            <label for="rating">Rate the Teacher:</label>
+            <select id="rating" name="rating" required>
+                <option value="">--Select Rating--</option>
+                <option value="1">1 - Poor</option>
+                <option value="2">2 - Fair</option>
+                <option value="3">3 - Good</option>
+                <option value="4">4 - Very Good</option>
+                <option value="5">5 - Excellent</option>
+            </select>
+
+            <!-- Submit Button -->
+            <input type="submit" value="Submit Feedback">
+        </form>
+    </div>
+       </section>
+
+
+</body>
+</html>
